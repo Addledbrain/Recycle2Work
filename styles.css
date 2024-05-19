@@ -31,14 +31,33 @@ h1 {
     color: #fff;
     margin-bottom: 5%;
 }
+.navbar-container {
+    position: sticky;
+    overflow: visible;
+    z-index: 100;
+    top: 0;
+    max-width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(69, 191, 85, 0.9);
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+
 .navbar a {
     display: flex;
     padding: 14px 16px;
+    margin-left: 5px;
+    margin-right: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgba(0, 38, 28, 0.9);
+    background-color: rgba(22, 128, 57, 0.9);
     color: whitesmoke;
     display: inline-block;
+    border-radius: 5px;
 }
 
 .navbar a:hover {
@@ -71,7 +90,6 @@ h1 {
     max-width: 1200px;
     padding-top: 1%;
     padding-bottom: 1%;
-
 }
 
 .textcontent {
