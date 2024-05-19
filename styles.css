@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(images/wood.jpg);
+    background-image: url('images/wood.jpg');
 }
 
 header {
@@ -32,6 +32,7 @@ h1 {
     margin-bottom: 5%;
 }
 .navbar-container {
+    font-family: Arial, Helvetica, sans-serif;
     position: sticky;
     overflow: visible;
     z-index: 100;
@@ -39,7 +40,11 @@ h1 {
     max-width: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: rgba(69, 191, 85, 0.9);
+    background-color: rgba(0, 38, 38, 1);
+}
+
+.navbar-container.scrolled {
+    background-color: rgba(0, 38, 38, 0.75); 
 }
 
 .navbar {
@@ -49,7 +54,7 @@ h1 {
 
 .navbar a {
     display: flex;
-    padding: 14px 16px;
+    padding: 10px 12px;
     margin-left: 5px;
     margin-right: 10px;
     text-decoration: none;
@@ -71,6 +76,19 @@ h1 {
     font-style: normal;
     text-align: center;
     color: #fff;
+}
+
+h2 {
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    height: 100px; 
+    margin-top: -100px; 
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .main-content {
@@ -100,7 +118,6 @@ h1 {
 footer {
     text-align: center;
     background-image: url(images/Greenleaf.png);
-    background-color: #2C372E;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
@@ -209,7 +226,9 @@ button {
         font-size: 2em;
         margin-bottom: 3%;
     }
-    
+    .navbar-container {
+        flex-direction: column;
+    }
     .textcontent {
         margin-left: 10%;
         margin-right: 10%;

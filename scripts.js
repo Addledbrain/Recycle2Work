@@ -86,6 +86,17 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(element);
   });
 });
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var navbar = document.querySelector(".navbar-container");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+}
+
 // Array of slogans to display. Commented out because I didn't need it. 
 // let slogans = ['Bedre bæredygtighed, endnu bedre design', 'Rent design, renere verden', 'Gør fremtiden bæredygtig'];
 
