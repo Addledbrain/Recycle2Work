@@ -31,6 +31,20 @@ h1 {
     color: #fff;
     margin-bottom: 5%;
 }
+.navbar a {
+    display: flex;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0, 38, 28, 0.9);
+    color: whitesmoke;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
 .headline { 
     font-family: "pinecone-mvb-rough2-wide", sans-serif;
